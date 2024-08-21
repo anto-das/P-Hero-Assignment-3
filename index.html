@@ -1,12 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Rinterio</title>
+    <!-- daisyUi-link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- tailwind-css-link -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- tailwind-content -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <!-- font-link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<!-- font-awesome-link -->
+<script src="https://kit.fontawesome.com/91806e45ac.js" crossorigin="anonymous"></script>
+<!-- internal-css-apply -->
+<style>
+.manrope-font {
+  font-family: "Manrope", sans-serif;
+}
+</style>
 </head>
-<body>
-    
+<body class="manrope-font">
+    <!-- header-part -->
+    <header class="container lg:mx-auto lg:my-12">
+        <!-- nav-section -->
+        <nav class="mx-3">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start space-x-2">
+                  <span class="bg-[#ABEF5F] w-8 rounded-full"><i class="fa-solid fa-arrow-right -rotate-45 p-2 text-black"></i></span>
+                  <a class="text-3xl text-[#212121] font-extrabold">Rinterio</a>
+                </div>
+                <!-- nav-links -->
+                   <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 ">
+                      <li><a class="text-base text-[#494949] font-extrabold">Home</a></li>
+                      <li><a class="text-base text-[#737373]">Services</a></li>
+                      <li><a class="text-base text-[#737373]">Portfoilo</a></li>
+                      <li><a class="text-base text-[#737373]">Blogs</a></li>
+                      <li><a class="text-base text-[#737373]">Contact Us</a></li>
+                    </ul>
+                  </div>
+                  <!-- mobile-responsive-menubar -->
+                  <div class="lg:hidden md:hidden border border-[#E9E9E9] bg-white rounded-full shadow ml-32">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 m-3">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>                    
+                  </div>
+                  <!-- large-device-button -->
+                <div class="navbar-end hidden md:flex lg:flex">
+                  <div class="flex justify-center items-center gap-4">
+                    <!-- shopping-card-icons -->
+                     <p class="border border-[#E9E9E9] bg-white rounded-full shadow">
+                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 m-3">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                       </svg>
+                     </p>
+                    <!-- search-icons -->
+                     <p class="border border-[#E9E9E9] bg-white rounded-full shadow">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 m-3">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                       </svg>                 
+                     </p>    
+                     <!-- nav-button -->
+                  <a class="w-[208px] h-[48px] text-xl font-extrabold hover:bg-none rounded-full bg-[#ABEF5F] flex justify-center items-center">Book Consult 
+                    <span class="w-7 bg-black rounded-full ml-2"><i class="fa-solid fa-arrow-right -rotate-45 text-white mx-1"></i></span>
+                  </a>
+                  <!-- medium-device -->
+                  <div class="lg:hidden border border-[#E9E9E9] bg-white rounded-full shadow ml-32 md:ml-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 m-3">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>                    
+                  </div>
+                </div>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main-part -->
+    <main></main>
+    <!-- footer-part -->
+    <footer></footer>
 </body>
 </html>
