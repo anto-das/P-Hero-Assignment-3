@@ -28,6 +28,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 <!-- font-awesome-link -->
 <script src="https://kit.fontawesome.com/91806e45ac.js" crossorigin="anonymous"></script>
+<!-- tailwind-css-postcode -->
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+          'text-color':'#212121'
+        }
+      }
+    }
+  }
+</script>
 <!-- internal-css-apply -->
 <style>
 .manrope-font {
@@ -37,9 +50,9 @@
 </head>
 <body class="manrope-font">
     <!-- header-part -->
-    <header class="container lg:mx-auto lg:my-12">
+    <header class="container lg: md:mx-auto lg:my-12">
         <!-- nav-section -->
-        <nav class="mx-3">
+        <nav class="mx-3 lg:mx-0">
             <div class="navbar bg-base-100">
                 <div class="navbar-start space-x-2">
                   <span class="bg-[#ABEF5F] w-8 rounded-full"><i class="fa-solid fa-arrow-right -rotate-45 p-2 text-black"></i></span>
@@ -56,11 +69,13 @@
                     </ul>
                   </div>
                   <!-- mobile-responsive-menubar -->
-                  <div class="lg:hidden md:hidden border border-[#E9E9E9] bg-white rounded-full shadow ml-32">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 m-3">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>                    
-                  </div>
+                   <div class="navbar-end">
+                    <div class="lg:hidden md:hidden border border-[#E9E9E9] bg-white rounded-full shadow">
+                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 m-3">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                       </svg>                    
+                     </div>
+                   </div>
                   <!-- large-device-button -->
                 <div class="navbar-end hidden md:flex lg:flex">
                   <div class="flex justify-center items-center gap-4">
@@ -90,9 +105,83 @@
               </div>
             </div>
         </nav>
+        <!-- banner-section -->
+         <div class="mx-3 lg:mx-0 my-4 lg:my-10">
+          <!--banner-image-part -->
+          <div class="max-w-xl lg:mx-auto my-4 mx-10">
+            <img src="./assets/banner.png" alt="">
+          </div>
+          <!-- banner-text-part -->
+           <div>
+            <h1 class="text-4xl lg:text-6xl text-center  font-extrabold text-color lg:w-[1084px] mx-auto my-6">A barn house of this design has a  striking appearance</h1>
+            <p class="text-center lg:w-[907px] mx-auto text-[#494949] font-medium pb-3">A barn house with this design boasts a striking appearance, blending rustic charm with modern elegance. Its bold architecture features clean lines and expansive windows, creating a dramatic contrast with traditional barn aesthetics and offering a unique, eye-catching silhouette.</p>
+            <div class="text-center mx-auto w-full lg: md:max-w-[210px] py-3 rounded-full flex justify-center align-center gap-2 bg-lime-200">
+              <span class="mt-1 text-xl font-bold">View Details</span>
+              <span class="bg-[#ABEF5F] w-8 rounded-full"><i class="fa-solid fa-arrow-right -rotate-45 p-2 text-black"></i></span>
+            </div> 
+           </div>
+         </div>
     </header>
     <!-- main-part -->
-    <main></main>
+    <main class="bg-base-200 mt-16">
+      <!-- about-us-section -->
+       <section class="lg:pt-20">
+         <div class="hero min-h-screen">
+           <div class="hero-content flex-col-reverse lg:flex-row-reverse container">
+            <!-- about-image-part -->
+            <div class="w-full lg:max-w-[573px] lg:ml-5 rounded-lg shadow-2xl">
+              <img
+                src="./assets/Rectangle.png" class="w-full" alt="bulding-image"/>
+            </div>
+            <!-- about-text-part -->
+             <div class="lg:pl-10 relative">
+              <!-- arrow-img -->
+              <div class="hidden lg:flex">
+                <img src="./assets/Vector.png" class="absolute py-5 -top-20 -left-8 border-2 border-dashed border-[#212121] rounded-sm" alt="">
+              </div>
+              <!-- about-us-button -->
+               <div class="w-[110px] mx-auto lg:mx-0 text-center bg-white rounded-full shadow mb-5">
+                <i class="fa-solid fa-arrow-right px-1"></i>
+                <button class="pr-1">About Us</button>
+               </div>
+               <!-- about-text-content -->
+               <h1 class="text-2xl text-center text-[#212121] lg:text-5xl lg:text-left md:text-center font-bold">We design thoughtful, liveable spaces</h1>
+               <p class="py-6 text-center lg:text-left md:text-center">
+                We design thoughtful, livable spaces that blend functionality with aesthetics. Our approach prioritizes comfort, style, and practicality, creating environments that enhance daily living and reflect personal taste and needs.
+               </p>
+               <!-- about-us-card-part -->
+               <div class="grid lg:grid-cols-1 md:grid-cols-2 gap-8">
+                  <!-- about-us-first-card -->
+                  <div class="w-full shadow-lg p-6 lg:p-10 rounded-2xl flex justify-start items-start lg:items-center bg-white">
+                   <!-- card-icon -->
+                   <div class="mr-4 lg:mr-6 w-48 flex justify-start items-start">
+                     <img src="assets/commercial.png" class="lg:w-3/4" alt="">
+                   </div>
+                   <!-- card-content -->
+                   <div class="">
+                     <h2 class="text-xl font-extrabold text-[#494949]">Commercial</h2>
+                     <p class=" lg:pt-6">We create innovative commercial spaces that drive business success and inspire productivity through thoughtful design.</p>
+                   </div>
+                 </div>
+                 <!-- about-us-second-card -->
+                 <div class="w-full shadow-xl  p-6 lg:p-10 rounded-2xl flex justify-start items-start lg:items-center bg-white">
+                   <!-- card-icon -->
+                   <div class="mr-4 lg:mr-6 w-48 flex justify-start items-start">
+                     <img src="assets/commercial.png" class="lg:w-3/4" alt="">
+                   </div>
+                   <!-- card-content -->
+                   <div class="">
+                     <h2 class="text-xl font-extrabold text-[#494949]">Residential</h2>
+                     <p class=" lg:pt-6">We craft personalized residential spaces that blend comfort, style, and functionality for everyday living.</p>
+                   </div>
+                 </div>
+                </div>
+             </div>
+         </div>
+         </div>
+       </section>
+       <!--  -->
+    </main>
     <!-- footer-part -->
     <footer></footer>
 </body>
