@@ -59,8 +59,8 @@
                   <a class="text-3xl text-[#212121] font-extrabold">Rinterio</a>
                 </div>
                 <!-- nav-links -->
-                   <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 ">
+                   <div class="navbar-center hidden lg:flex ml-36">
+                    <ul class="menu menu-horizontal">
                       <li><a class="text-base text-[#494949] font-extrabold">Home</a></li>
                       <li><a class="text-base text-[#737373]">Services</a></li>
                       <li><a class="text-base text-[#737373]">Portfoilo</a></li>
@@ -115,7 +115,7 @@
            <div>
             <h1 class="text-4xl lg:text-6xl text-center  font-extrabold text-color lg:w-[1084px] mx-auto my-6">A barn house of this design has a  striking appearance</h1>
             <p class="text-center lg:w-[907px] mx-auto text-[#494949] font-medium pb-3">A barn house with this design boasts a striking appearance, blending rustic charm with modern elegance. Its bold architecture features clean lines and expansive windows, creating a dramatic contrast with traditional barn aesthetics and offering a unique, eye-catching silhouette.</p>
-            <div class="text-center mx-auto w-full lg: md:max-w-[210px] py-3 rounded-full flex justify-center align-center gap-2 bg-lime-200">
+            <div class="text-center mx-auto w-full md:w-full lg:max-w-[210px] py-3 rounded-full flex justify-center align-center gap-2 bg-lime-200">
               <span class="mt-1 text-xl font-bold">View Details</span>
               <span class="bg-[#ABEF5F] w-8 rounded-full"><i class="fa-solid fa-arrow-right -rotate-45 p-2 text-black"></i></span>
             </div> 
@@ -125,61 +125,59 @@
     <!-- main-part -->
     <main class="bg-base-200 mt-16">
       <!-- about-us-section -->
-       <section class="lg:pt-20">
-         <div class="hero min-h-screen">
-           <div class="hero-content flex-col-reverse lg:flex-row-reverse container">
-            <!-- about-image-part -->
-            <div class="w-full lg:max-w-[573px] lg:ml-5 rounded-lg shadow-2xl">
-              <img
-                src="./assets/Rectangle.png" class="w-full" alt="bulding-image"/>
-            </div>
-            <!-- about-text-part -->
-             <div class="lg:pl-10 relative">
-              <!-- arrow-img -->
-              <div class="hidden lg:flex">
-                <img src="./assets/Vector.png" class="absolute py-5 -top-20 -left-8 border-2 border-dashed border-[#212121] rounded-sm" alt="">
-              </div>
-              <!-- about-us-button -->
-               <div class="w-[110px] mx-auto lg:mx-0 text-center bg-white rounded-full shadow mb-5">
-                <i class="fa-solid fa-arrow-right px-1"></i>
-                <button class="pr-1">About Us</button>
-               </div>
-               <!-- about-text-content -->
-               <h1 class="text-2xl text-center text-[#212121] lg:text-5xl lg:text-left md:text-center font-bold">We design thoughtful, liveable spaces</h1>
-               <p class="py-6 text-center lg:text-left md:text-center">
-                We design thoughtful, livable spaces that blend functionality with aesthetics. Our approach prioritizes comfort, style, and practicality, creating environments that enhance daily living and reflect personal taste and needs.
-               </p>
-               <!-- about-us-card-part -->
-               <div class="grid lg:grid-cols-1 md:grid-cols-2 gap-8">
-                  <!-- about-us-first-card -->
-                  <div class="w-full shadow-lg p-6 lg:p-10 rounded-2xl flex justify-start items-start lg:items-center bg-white">
-                   <!-- card-icon -->
-                   <div class="mr-4 lg:mr-6 w-48 flex justify-start items-start">
-                     <img src="assets/commercial.png" class="lg:w-3/4" alt="">
-                   </div>
-                   <!-- card-content -->
-                   <div class="">
-                     <h2 class="text-xl font-extrabold text-[#494949]">Commercial</h2>
-                     <p class=" lg:pt-6">We create innovative commercial spaces that drive business success and inspire productivity through thoughtful design.</p>
-                   </div>
-                 </div>
-                 <!-- about-us-second-card -->
-                 <div class="w-full shadow-xl  p-6 lg:p-10 rounded-2xl flex justify-start items-start lg:items-center bg-white">
-                   <!-- card-icon -->
-                   <div class="mr-4 lg:mr-6 w-48 flex justify-start items-start">
-                     <img src="assets/commercial.png" class="lg:w-3/4" alt="">
-                   </div>
-                   <!-- card-content -->
-                   <div class="">
-                     <h2 class="text-xl font-extrabold text-[#494949]">Residential</h2>
-                     <p class=" lg:pt-6">We craft personalized residential spaces that blend comfort, style, and functionality for everyday living.</p>
-                   </div>
-                 </div>
+      <section class="container lg:mx-auto lg:pt-24">
+        <!-- about-part -->
+         <div class="mx-3 md: lg:flex  lg:gap-10">
+        <!-- text-content -->
+        <div class="lg:max-w-[569px] relative lg:ml-10 md:ml-0">
+          <!-- arrow-img -->
+         <div class="hidden lg:flex">
+          <img src="./assets/Vector.png" class="absolute py-5 -top-20 -left-14" alt="">
+        </div>
+          <!-- text-top-button-content -->
+          <div class="w-[110px] mx-auto lg:mx-0 text-center bg-white rounded-full shadow mb-5">
+            <i class="fa-solid fa-arrow-right px-1"></i>
+            <button class="pr-1">About Us</button>
+           </div>
+          <h1 class="text-2xl text-center text-[#212121] lg:text-5xl lg:text-left md:text-center font-bold">We design thoughtful, liveable spaces</h1>
+          <p class="py-6 text-center lg:text-left md:text-center">
+            We design thoughtful, livable spaces that blend functionality with aesthetics. Our approach prioritizes comfort, style, and practicality, creating environments that enhance daily living and reflect personal taste and needs.
+           </p>
+
+           <!-- about-us-card-content -->
+            <div class=" grid lg:grid-cols-1 gap-6 md:grid-cols-2 mb-5 lg:mb-0">
+              <!-- first-card -->
+              <div class="max-w-full shadow-lg  rounded-2xl flex justify-start items-start lg:items-center bg-white border py-3 lg:p-5">
+                <!-- card-icon -->
+                <div class=" ml-3 lg:ml-0 mr-0 lg:mr-6 w-48 flex justify-start items-start">
+                  <img src="assets/commercial.png" class="lg:w-3/4" alt="">
                 </div>
-             </div>
+                <!-- card-content -->
+                <div class="">
+                  <h2 class="text-xl font-extrabold text-[#494949]">Commercial</h2>
+                  <p class=" lg:pt-6">We create innovative commercial spaces that drive business success.</p>
+                </div>
+              </div>
+                 <!-- about-us-second-card -->
+                 <div class="max-w-full shadow-lg  rounded-2xl flex justify-start items-start lg:items-center bg-white border py-3 lg:p-5">
+                  <!-- card-icon -->
+                  <div class="ml-3 lg:ml-0 mr-0 lg:mr-6 w-48 flex justify-start items-start">
+                    <img src="assets/residential.png" class="lg:w-3/4" alt="">
+                  </div>
+                  <!-- card-content -->
+                  <div class="">
+                    <h2 class="text-xl font-extrabold text-[#494949]">Residential</h2>
+                    <p class=" lg:pt-6">We craft personalized residential spaces that blend comfort,and functionality.</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- about-us-image -->
+         <div class="md:max-w-[1040px] mx-auto lg:mt-2">
+          <img src="./assets/Rectangle.png" class="w-full" alt="">
          </div>
-         </div>
-       </section>
+        </div>
+      </section>
        <!--  -->
     </main>
     <!-- footer-part -->
