@@ -231,9 +231,9 @@
         </div>
        </section>
        <!-- lets discuss section -->
-        <section style="background-image: url(./assets/bg.jpg);" class="bg-cover h-[910px] bg-no-repeat mt-24">
+        <section style="background-image: url(./assets/bg.jpg);" class="bg-cover max-h-full bg-no-repeat mt-24">
           <!-- lets discusc text part -->
-          <div class="lg:py-16 mx-3 lg:mx-auto border border-amber-400 max-w-[970px]">
+          <div class="py-4 lg:py-28 mx-3 lg:mx-auto max-w-[970px]">
             <!-- lets-connect-button -->
             <div class="w-[145px] py-2 mx-auto text-center bg-white rounded-full shadow mb-5 bg-gradient-to-t from-[#ABEF5F33] to-[#ABEF5F33]">
               <i class="fa-solid fa-arrow-right px-1"></i>
@@ -243,7 +243,7 @@
               <h1 class="text-4xl text-center text-[#212121]">Let’s Discuss Next Project</h1>
               <p class="text-base text-center text-[#494949] font-medium my-8">"Let’s Discuss the Next Project: A crucial step in planning, aligning goals, <br> and ensuring success through effective collaboration and strategy."</p>
               <!-- form-input-side -->
-              <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div class="grid grid-cols-1 lg: md:grid-cols-2 gap-6">
                 <input type="text" placeholder="First Name*" class="input max-w-full rounded-3xl"/>
                 <input type="text" placeholder="Last Name*" class="input max-w-full rounded-3xl"/>
                 <input type="text" placeholder="Phone Number*" class="input max-w-full rounded-3xl"/>
@@ -253,9 +253,9 @@
                <!-- <textarea class="mt-7 w-full h-[200px] rounded-3xl border-none">
 
                </textarea> -->
-               <textarea
-  placeholder="Write your massage here"
-  class="textarea textarea-bordered textarea-lg w-full max-w-full mt-6 h-[190px] max-h-full rounded-3xl"></textarea>
+                    <textarea
+                    placeholder="Write your massage here"
+                    class="textarea textarea-bordered textarea-lg w-full max-w-full mt-6 h-[190px] max-h-full rounded-3xl"></textarea>
               <!-- form-input-button -->
               <div class="text-center mx-auto max-w-full py-3 rounded-full flex justify-center align-center gap-2 bg-lime-200 mt-8">
                 <span class="mt-1 text-xl font-bold">View Details</span>
@@ -265,6 +265,38 @@
         </section>
     </main>
     <!-- footer-part -->
-    <footer></footer>
+    <footer class="bg-[#1C1C1C]">
+      <!-- footer-content -->
+       <div class="py-24">
+       
+         <div class="max-w-[784px] mx-3 lg:mx-auto ">
+           <!-- footer-top-button -->
+           <div class="text-center flex justify-center items-center gap-1">
+            <p class="">
+              <i class="fa-solid fa-arrow-right -rotate-45 p-2 text-black w-8 bg-[#ABEF5F] rounded-full"></i>
+            </p>
+            <a class="text-3xl text-[#E9E9E9] font-extrabold">Rinterio</a>
+          </div>
+          <p class="text-center text-[#494949] font-medium py-3">A barn house with this design boasts a striking appearance, blending rustic charm with modern elegance.Its bold architecture features clean lines and expansive windows.</p>
+          <!-- footer-links -->
+          <div class="my-4 mx-auto">
+            <ul class="flex flex-col lg:flex-row gap-3 lg:gap-0 justify-between items-center">
+              <li><a class="text-base text-[#E9E9E9] font-extrabold">Home</a></li>
+              <li><a class="text-base text-[#E9E9E9]">Services</a></li>
+              <li><a class="text-base text-[#E9E9E9]">Portfoilo</a></li>
+              <li><a class="text-base text-[#E9E9E9]">Blogs</a></li>
+              <li><a class="text-base text-[#E9E9E9]">Contact Us</a></li>
+            </ul>
+          </div>
+          <!-- footer-band-button -->
+           <div class="pt-3">
+             <a class="max-w-full md:max-w-full lg:w-[208px] h-[48px] mx-auto text-xl font-extrabold hover:bg-none rounded-full bg-[#ABEF5F] flex justify-center items-center">Book Consult 
+               <span class="w-7 bg-black rounded-full ml-2"><i class="fa-solid fa-arrow-right -rotate-45 text-white mx-1"></i></span>
+             </a>
+           </div>
+          </div>
+         </div>
+       </div>
+    </footer>
 </body>
 </html>
